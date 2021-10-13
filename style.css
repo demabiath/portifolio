@@ -1,2 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap'); /* Fontes do usados no Portifolio */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css'); /* Acesso ao servidor para carregar os icones do site no servidor */
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header{
+    width: 100%;
+    height: 100vh; /* Altura da visualização de acordo cm o dispositivo e tela */
+    overflow: hidden; /*desabilitar tamanho de cabeçalho */
+    position: relative;
+}
+
+.img-wrapper{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 , 0, 0 , 0.8) 
+    
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre imagem sem perde resolução */
+    opacity: 0.8;
+    animation: zoom 3.8s;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.3);}
+    100%{
+        transform: scale(1);
+    }
+}
+
+.banner { /* Elementos da pagina principal */
+
+    position: absolute;
+    top: 30%; 
+    left: 10%;
+    
+    /* Distancia em relação ao top e a borda esquerda */
+}
+.banner h1{
+    color: white;
+    font-size: 4.5rem;                                  /* rem =  tamanho proporcional a fonte padrão */
+    font-family: "Baloo Da 2", serif;                   /* Seleciona a fonte e fonte reserva */
+    font-weight: 200;                                   /* negrito da fonte*/
+    text-shadow: .2rem .5rem 2px rgba(0 , 0, 0 , 1); /* Sombra da fonte */
+    line-height: 3.5rem;                               /* Distancia entre as linha de texto */
+    margin-bottom: 0.5rem;                             /* Espaçamento entre linhas */
+    opacity: 0;
+    animation: moveBanner 2s 0.1s;   
+    animation-fill-mode: forwards;                     /* Mantem a opacidade no seu ultimo estado */
+    
+}
+
+.banner h4{
+    color: white;
+    font-size: 2.5rem;                                 /* rem =  tamanho proporcional a fonte padrão */
+    font-family: "Baloo Da 2", serif;                  /* Seleciona a fonte e fonte reserva */
+    font-weight: 300;                                  /* negrito da fonte*/
+    text-shadow: .2rem .5rem 2px rgba(0 , 0, 0 , 0.5); /* Sombra da fonte */
+    line-height: 5rem;                                 /* Distancia entre as linha de texto */
+    margin-bottom: 7rem;
+    margin-left: 0rem;
+    opacity: 0;
+    animation: moveBanner 2s 0.3s;
+    animation-fill-mode: forwards;
+    
+}
+
+.banner p{
+    font-family: "Josefin Slab", serif;
+    color: white;
+    font-size: 2rem;
+    text-shadow: .2rem .2rem rgba(0 , 0, 0 , 0.5);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 2s 0.6s;
+    animation-fill-mode: forwards;
+}
+.banner button{
+    font-family: "Muli", serif;
+    color: white;
+    text-transform: uppercase;                                  /* Propriedade para mudar para maisculo */
+    letter-spacing: .1rem;                                      /* espaçamento entre as letras */
+    background: #0f0c29;                                      /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0;
+    animation: moveBanner 2s 0.9s;
+    animation-fill-mode: forwards;
+    
+    
+    /*Dimenções do botão */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+}
+.banner button:hover{
+    opacity: 0.9;
+    /* Animação do botão */
+}
+
+@keyframes moveBanner{
+    0%{
+        transform: translateY(15rem) rotateY(-30deg);
+        opacity: 0;
+        
+        
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+        
+    }
+    
+}
