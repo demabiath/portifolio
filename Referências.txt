@@ -1,6 +1,21 @@
-This favicon was generated using the following font:
+https://devdocs.io/ 
+Documentação de linguagens
 
-- Font Title: Kanit
-- Font Author: Copyright 2020 The Kanit Project Authors (https://github.com/cadsondemak/kanit)
-- Font Source: http://fonts.gstatic.com/s/kanit/v7/nKKV-Go6G5tXcraQI2GAdY5FPFtrGw.ttf
-- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
+https://fontawesome.com/
+Icones para web
+
+https://fonts.google.com/
+Fontes para web
+
+https://cdnjs.com/libraries/font-awesome
+URl's Servidores de icones
+
+https://unsplash.com/
+https://www.pexels.com/pt-br/
+Imagens e fotos
+
+https://uigradients.com/
+Site para cores
+
+https://animate.style/
+Site de animações
