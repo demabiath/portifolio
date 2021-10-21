@@ -1,7 +1,8 @@
 # portifolio
 
 Portifólio pessoal, desenvolvedor.
-Desenvolver habilidades com desenvolvimento front-end, familiriazar com o ambiente de programção. 
+Desenvolver habilidades com desenvolvimento front-end.
+Familiriazar com o ambiente de programção web. 
 
 ## Tarefas
 O controle das tarefas desse projeto será realizado através do GitHub
